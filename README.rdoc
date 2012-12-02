@@ -4,9 +4,17 @@
 == Installation
 Create new file 'app/config/initializers/ean.rb' with the following code:
     Ean::API.make('YOUR_API_CID', 'YOUR_API_KEY', 'YOUR_API_SHARED_SECRET', PARAMS = {})
-Where: 'YOUR_API_CID' (55505 - for beta testing), 'YOUR_API_KEY' and 'YOUR_API_SHARED_SECRET' is required, params is optional.
+Where:
+  'YOUR_API_CID' (55505 - for beta testing), 'YOUR_API_KEY' and 'YOUR_API_SHARED_SECRET' is required, params is optional.
 
 Allowed PARAMS:
-  :version => EAN_API_VERSION (by default used "3")
+  :version       => EAN_API_VERSION        (by default used "3")
+  :minor_rev     => EAN_API_MINOR_REVISION (by default used "4")
+  :locale        => EAN_API_LOCALE         (by default used "en_US")
+  :currency_code => EAN_API_CURRENCY_CODE  (by default used "USD")
+  :sig           => EAN_API_SIGNATURE      (by default used "")
+
+For more details see EAN Endpoints & Common Elements docs:
+http://developer.ean.com/docs/read/hotels/version_3/Endpoints_amp_Common_Elements
 
 This project rocks and uses MIT-LICENSE.
