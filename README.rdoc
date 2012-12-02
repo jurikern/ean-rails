@@ -5,6 +5,7 @@
 Create new file 'app/config/initializers/ean.rb' with the following code:
     Ean::API.make('YOUR_API_KEY', 'YOUR_API_SHARED_SECRET', PARAMS = {})
 Where: 'YOUR_API_KEY' and 'YOUR_API_SHARED_SECRET' is required, params is optional.
+
 Allowed PARAMS:
   :version => EAN_API_VERSION (by default used "3")
 
