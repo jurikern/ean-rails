@@ -1,7 +1,11 @@
 = Ean
 === Expedia Affiliate Network REST API for RAILS.
 
+If you don't have registered application in EAN developers network, then you'll do it here:
+https://developer.ean.com/member/register
+
 == Installation
+
 Create new file 'app/config/initializers/ean.rb' with the following code:
     Ean::API.make('YOUR_API_CID', 'YOUR_API_KEY', 'YOUR_API_SHARED_SECRET', PARAMS = {})
 Where:
