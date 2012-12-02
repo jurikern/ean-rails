@@ -1,0 +1,4 @@
+= Ean
+Expedia Affiliate Network REST API.
+
+This project rocks and uses MIT-LICENSE.

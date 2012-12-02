@@ -1,0 +1,2 @@
+module Ean
+end
