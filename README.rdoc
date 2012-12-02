@@ -2,10 +2,10 @@
 === Expedia Affiliate Network REST API for RAILS.
 
 == Installation
-  Create new file 'app/config/initializers/ean.rb' with the following code:
+Create new file 'app/config/initializers/ean.rb' with the following code:
     Ean::API.make('YOUR_API_KEY', 'YOUR_API_SHARED_SECRET', PARAMS = {})
-    Where: 'YOUR_API_KEY' and 'YOUR_API_SHARED_SECRET' is required, params is optional.
-    Allowed PARAMS:
-      :version => EAN_API_VERSION (by default used "3")
+Where: 'YOUR_API_KEY' and 'YOUR_API_SHARED_SECRET' is required, params is optional.
+Allowed PARAMS:
+  :version => EAN_API_VERSION (by default used "3")
 
 This project rocks and uses MIT-LICENSE.
