@@ -11,7 +11,8 @@ Gem::Specification.new do |s|
   s.summary     = "Expedia Affiliate Network REST API"
   s.description = "Expedia Affiliate Network REST API"
 
-  s.files = Dir["{app,config,db,lib}/**/*"] + ["MIT-LICENSE", "Rakefile", "README.rdoc"]
+  s.files = Dir["{lib}/**/*"] + ["MIT-LICENSE", "Rakefile", "README.rdoc"]
 
   s.add_dependency "rails", "~> 3.2.9"
+  s.add_dependency "httparty"
 end
