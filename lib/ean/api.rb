@@ -15,16 +15,15 @@ module Ean
     @@instance = nil
 
     def self.make(cid, key, secret, params={})
-      @@instance = self.new(
-          cid,
-          key,
-          secret,
-          params[:version].present? ? params[:version] : "3",
-          params[:locale].present? ? params[:locale] : "en_US",
-          params[:minor_rev].present? ? params[:minor_rev] : "4",
-          params[:currency_code].present? ? params[:currency_code] : "USD",
-          params[:sig].present? ? params[:currency_code] : ""
-      )
+      @@instance               = self.new
+      @@instance.cid           = cid
+      @@instance.key           = key
+      @@instance.sig           = params[:sig].present? ? params[:sig] : ""
+      @@instance.secret        = secret
+      @@instance.version       = params[:version].present? ? params[:version] : "3"
+      @@instance.locale        = params[:locale].present? ? params[:locale] : "en_US"
+      @@instance.minor_rev     = params[:minor_rev].present? ? params[:minor_rev] : "4"
+      @@instance.currency_code = params[:currency_code].present? ? params[:currency_code] : "USD"
     end
 
     def self.instance
