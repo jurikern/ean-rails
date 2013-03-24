@@ -3,7 +3,7 @@ $:.push File.expand_path("../lib", __FILE__)
 require "ean/version"
 
 Gem::Specification.new do |s|
-  s.name        = "ean"
+  s.name        = "ean-rails"
   s.version     = Ean::VERSION
   s.authors     = ["Juri Semjonov"]
   s.email       = ["js@codegears.co"]
