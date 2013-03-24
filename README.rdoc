@@ -10,7 +10,7 @@ Add this line to your application's Gemfile:
     gem "ean-rails"
 
 And then execute:
-    bundle
+    $ bundle
 
 Create new file 'app/config/initializers/ean.rb' with the following code:
     Ean::API.make('YOUR_API_CID', 'YOUR_API_KEY', 'YOUR_API_SHARED_SECRET', PARAMS = {})
